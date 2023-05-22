@@ -81,8 +81,8 @@ Sigue detalladamente las instrucciones del examen. Cualquier duda, pregunta a tu
 
 20. Cierralos con un solo commit que contenga en la etiqueta "Cerrando Issues - Nombre y Apellidos" ***(CV - 1.5 puntos)***
 
-### Ramas y Merge II
-
+### Ramas y Merge II 
+ 
 21.  Fusiona la rama desarrollo en la rama main ***(CV - 0.5 puntos)***
 
 ### Github Pages
