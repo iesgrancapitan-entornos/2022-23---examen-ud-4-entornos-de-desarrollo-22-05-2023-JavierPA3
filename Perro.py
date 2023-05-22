@@ -1,7 +1,8 @@
 """
 Clase Perro.
-:Date: 2023-05-22
-:autor: Jaime Rabasco Ronda.
+:date: 2023-05-22
+
+:autor: Jaime Rabasco
 """
 class Perro:
 
@@ -11,8 +12,7 @@ class Perro:
 
     def ladrar(self):
         """Esta función hace que nuestro 'perro' ladre, tiene que salir por pantalla guau"""
-        print(self.ladrar);
+        print(self.ladrar)
 
 """Creamos el objeto perro y hacemos que ladre."""
-p = Perro();
-p.ladrar();
+p = Perro()
