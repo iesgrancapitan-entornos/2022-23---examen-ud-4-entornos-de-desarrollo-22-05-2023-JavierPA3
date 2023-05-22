@@ -45,7 +45,7 @@ class Coche(Vehiculo) :
 
     @num_serie.setter
     def num_serie(self, value):
-        """Propiedad setter"""
+        """Propiedad setterr"""
         self.__num_serie = value
 
     @property
