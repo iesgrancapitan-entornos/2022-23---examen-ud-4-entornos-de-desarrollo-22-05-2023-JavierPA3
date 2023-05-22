@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>coche module &mdash; Examen Entornos GNU documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="perro module" href="perro.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Examen Entornos
+          </a>
+              <div class="version">
+                1.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="perro.html">perro module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">coche module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#coche.Coche"><code class="docutils literal notranslate"><span class="pre">Coche</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#coche.Coche.cilindrada"><code class="docutils literal notranslate"><span class="pre">Coche.cilindrada</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coche.Coche.color"><code class="docutils literal notranslate"><span class="pre">Coche.color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coche.Coche.fabricante"><code class="docutils literal notranslate"><span class="pre">Coche.fabricante</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coche.Coche.num_serie"><code class="docutils literal notranslate"><span class="pre">Coche.num_serie</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#coche.Vehiculo"><code class="docutils literal notranslate"><span class="pre">Vehiculo</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#coche.Vehiculo.color"><code class="docutils literal notranslate"><span class="pre">Vehiculo.color</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coche.Vehiculo.fabricante"><code class="docutils literal notranslate"><span class="pre">Vehiculo.fabricante</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coche.Vehiculo.num_serie"><code class="docutils literal notranslate"><span class="pre">Vehiculo.num_serie</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Examen Entornos</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">coche module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/coche.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-coche">
+<span id="coche-module"></span><h1>coche module<a class="headerlink" href="#module-coche" title="Permalink to this heading"></a></h1>
+<p>Clase Coche base para el Examen de la UD4
+Refactorización
+Extrae una superclase Vehículo con los campos</p>
+<blockquote>
+<div><p>num_serie
+fabricante
+color</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">autor<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Jaime Rabasco</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="coche.Coche">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coche.</span></span><span class="sig-name descname"><span class="pre">Coche</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_serie</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cilindrada</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fabricante</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/coche.html#Coche"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coche.Coche" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#coche.Vehiculo" title="coche.Vehiculo"><code class="xref py py-class docutils literal notranslate"><span class="pre">Vehiculo</span></code></a></p>
+<dl class="py property">
+<dt class="sig sig-object py" id="coche.Coche.cilindrada">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cilindrada</span></span><a class="headerlink" href="#coche.Coche.cilindrada" title="Permalink to this definition"></a></dt>
+<dd><p>Propiedad getter
+:return self.__cilindrada:</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="coche.Coche.color">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">color</span></span><a class="headerlink" href="#coche.Coche.color" title="Permalink to this definition"></a></dt>
+<dd><p>Propiedad getter
+:return self.__color:</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="coche.Coche.fabricante">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fabricante</span></span><a class="headerlink" href="#coche.Coche.fabricante" title="Permalink to this definition"></a></dt>
+<dd><p>Propiedad getter
+:return self.__fabricante:</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="coche.Coche.num_serie">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">num_serie</span></span><a class="headerlink" href="#coche.Coche.num_serie" title="Permalink to this definition"></a></dt>
+<dd><p>Propiedad getter
+:return self.__num_serie:</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="coche.Vehiculo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">coche.</span></span><span class="sig-name descname"><span class="pre">Vehiculo</span></span><a class="reference internal" href="_modules/coche.html#Vehiculo"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#coche.Vehiculo" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Esta es la superclase Vehiculo con sus atributos</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coche.Vehiculo.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'rojo'</span></em><a class="headerlink" href="#coche.Vehiculo.color" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coche.Vehiculo.fabricante">
+<span class="sig-name descname"><span class="pre">fabricante</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'seat'</span></em><a class="headerlink" href="#coche.Vehiculo.fabricante" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coche.Vehiculo.num_serie">
+<span class="sig-name descname"><span class="pre">num_serie</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#coche.Vehiculo.num_serie" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="perro.html" class="btn btn-neutral float-left" title="perro module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Javier Postigo Arévalo.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
